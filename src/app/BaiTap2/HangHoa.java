@@ -11,9 +11,11 @@ public class HangHoa extends GioHang {
         this.gia = gia;
         this.moTa = moTa;
     }
-    @Override
-    public double thanhToan() {
-        return 0;
-    }
 
+    public HangHoa() {
+	}
+
+	public int getGia(){
+        return gia;
+    }
 }

@@ -1,15 +1,13 @@
 package app.BaiTap2;
+
 import java.util.ArrayList;
-public abstract class GioHang {
+
+public class GioHang {
     IThanhToan hinhThucTT;
-    ArrayList<HangHoa> hh = new ArrayList<>();
-    public ArrayList<HangHoa> getDs(){
-        return hh;
-    }
+    private static ArrayList<String> ds = new ArrayList<>();
 
-
-    public void sethinhThucTT(final IThanhToan hinhThucTT) {
+    public void sethinhThucTT(IThanhToan hinhThucTT) {
         this.hinhThucTT = hinhThucTT;
     }
-    public abstract double thanhToan();
-}
+
+}   

@@ -12,7 +12,8 @@ public class HangHoa extends GioHang {
         this.moTa = moTa;
     }
 
-    public HangHoa() {
+    public String TT() {
+        return this.tenHH + " " + this.gia + " " + this.moTa;
 	}
 
 	public int getGia(){

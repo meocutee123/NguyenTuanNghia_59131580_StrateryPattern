@@ -1,17 +1,18 @@
 package app.BaiTap3;
 
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 public class SinhVien {
     String hoTen;
-    Date ngaySinh;
+    java.util.Date ngaySinh;
     float diemTB;
 
     public SinhVien(){
 
     }
-    public SinhVien(String hoTen, Date ngaySinh, float diemTB){
+    public SinhVien(String hoTen, java.util.Date dt_1, float diemTB){
         this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
+        this.ngaySinh = dt_1;
         this.diemTB = diemTB;
     }
 
@@ -29,7 +30,7 @@ public class SinhVien {
         this.diemTB = diemTB;
     }
     
-    public Date getngaySinh(){
+    public java.util.Date getngaySinh() {
         return ngaySinh;
     }
     public void setngaySinh(Date ngaySinh){
@@ -38,6 +39,8 @@ public class SinhVien {
 
     @Override
     public String toString(){
-        return this.hoTen + " " + this.ngaySinh + " " + this.diemTB;
+        SimpleDateFormat objSDF = new SimpleDateFormat("dd-mm-yyyy");
+
+        return this.hoTen + " " + objSDF.format(this.ngaySinh) + " " + this.diemTB;
     }
 }

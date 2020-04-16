@@ -1,16 +1,14 @@
 package app.BaiTap3;
 
-import java.util.ArrayList;
-
+import java.util.*;
 public class QLSV {
     ArrayList<SinhVien> ds = new ArrayList<>();
 
-    public void sapXep(){
-        
+
+    public void add(SinhVien sv) {
+        ds.add(sv);
     }
-    public void add(SinhVien o){
-        ds.add(o);
-    }
+    
     public void inDs(){
         for(SinhVien sv: ds){
             System.out.println(sv.toString() + "\n");

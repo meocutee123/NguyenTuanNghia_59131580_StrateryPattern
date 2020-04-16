@@ -1,7 +1,7 @@
 package app.BaiTap3;
 
 import java.sql.Date;
-public abstract class SinhVien {
+public class SinhVien {
     String hoTen;
     Date ngaySinh;
     float diemTB;

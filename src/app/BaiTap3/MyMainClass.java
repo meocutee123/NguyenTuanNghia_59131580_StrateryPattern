@@ -14,11 +14,18 @@ public class MyMainClass {
         SinhVien sv2 = new SinhVien("Nguyen Tuan Meo", dt_2, 9f);
         Date dt_3 = objSDF.parse("20-08-2001");
         SinhVien sv3 = new SinhVien("Nguyen Tuan Cutee", dt_3, 9f);
-
-
         ql.add(sv1);
         ql.add(sv2);
         ql.add(sv3);
+
+        System.out.println("Sap xep theo ten: ");
+        ql.setSS(new SoSanhTheoTen());
+        ql.sapXep();
+        ql.inDs();
+
+        System.out.println("Sap xep theo diem: ");
+        ql.setSS(new SoSanhTheoDiem());
+        ql.sapXep();
         ql.inDs();
     }
 }
